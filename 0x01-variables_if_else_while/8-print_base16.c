@@ -1,15 +1,14 @@
 #include <stdio.h>
 /**
- * main - Entry poit
- * Description: prints all the numbers of base 16 in lowercase
- * REturn: Always 0
+ * main - prints all the numbers in base 16
+ * Return: Always 0
  */
 int main(void)
 {
 	int num;
 	char la;
 
-	for (num = 0; num < 10; num++)
+	for (num = 0; num <= 10; num++)
 		putchar((num % 10) + '0');
 
 	for (la = 'a'; la <= 'f'; la++)
