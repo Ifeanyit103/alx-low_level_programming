@@ -7,7 +7,7 @@ void print_alphabet_x10(void)
 	int ten;
 	char let;
 
-	for (let = 0; let <= 9; let++)
+	while (ten++ <= 9)
 	{
 		for (let = 'a'; let <= 'z'; let++)
 			_putchar(let);
