@@ -11,7 +11,7 @@ int main(void)
 	int k;
 
 	printf("1");
-	for (k = 1; k <= 100; k++)
+	for (k = 2; k <= 100; k++)
 	{
 		printf(" ");
 		if (k % 3 == 0)
