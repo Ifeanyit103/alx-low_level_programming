@@ -2,9 +2,8 @@
 
 /**
  * puts_half - function that prints half of a string
- * @str: half of a string
+ * @str: input
  */
-
 void puts_half(char *str)
 {
 	int len = 0;
