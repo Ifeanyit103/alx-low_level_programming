@@ -9,13 +9,12 @@ int check_prime(int n, int i);
  */
 int check_prime(int n, int i)
 {
-	if (n <= 1)
+	if (i < 2 || i % n == 0)
 		return (0);
-	if (n % 1 == 0 && i > 1)
-		return (0);
-	if ((n / 1) < i)
+	else if (n > i / 2)
 		return (1);
-	return (check_prime(n, i + 1));
+	else
+		return (check(n + 1, i));
 }
 
 /**
@@ -29,4 +28,3 @@ int is_prime_number(int n)
 		return (1);
 	return (check_prime(n, 1));
 }
-
