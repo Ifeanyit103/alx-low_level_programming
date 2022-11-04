@@ -5,8 +5,9 @@ int check_prime(int n, int i);
  * check_prime - prime numbers
  * @n: number
  * @i: iterator
- * Return: 1 or 0
+ * Return: in
  */
+
 int check_prime(int n, int i)
 {
 	if (i < 2 || i % n == 0)
@@ -26,5 +27,5 @@ int is_prime_number(int n)
 {
 	if (n == 2)
 		return (1);
-	return (check_prime(n, 1));
+	return (check_prime(n, 2));
 }
